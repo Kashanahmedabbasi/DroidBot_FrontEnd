@@ -1,0 +1,181 @@
+$theme-colors: (
+    "site-light": #ffffff,
+    "site-text-color": #56ccf2,
+    "site-customize": #eefafe,
+    "site-support": #fef7ee,
+    "site-elevate": #f2b456,
+    "site-elevate-text": #bf7302,
+    "site-chatBot": #69d2f3,
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+.hero-section {
+    background-image: url("../img/hero-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.header-left {
+    @media screen and (max-width: 409px) {
+        font-size: 20px;
+        margin-left: 0px !important;
+    }
+}
+.header-right {
+    @media screen and (max-width: 409px) {
+        font-size: 10px;
+        margin-right: 0px !important;
+    }
+}
+.hero-para {
+    @media screen and (max-width: 370px) {
+        font-size: 22px;
+    }
+}
+.customize-section {
+    @media screen and (max-width: 409px) {
+        margin-left: 0px !important;
+    }
+}
+.customize-text {
+    @media screen and (max-width: 370px) {
+        font-size: 22px !important;
+    }
+}
+.support-top {
+    @media screen and (max-width: 370px) {
+        font-size: 18px !important;
+    }
+}
+.hero-body {
+    @media screen and (max-width: 409px) {
+        margin-left: 0px !important;
+    }
+}
+$weights: 100 200 300 400 500 500 600 700 800;
+@each $weight in $weights {
+    .fw--#{$weight} {
+        font-weight: $weight;
+    }
+}
+@for $size from 9 through 96 {
+    .fs--#{$size} {
+        font-size: $size/16 + rem;
+    }
+}
+
+@media screen and (max-width: 1525px) {
+    .chat-img {
+        width: 60% !important;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .chat-img {
+        width: 75% !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .chat-img {
+        width: 85% !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .chat-img {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .chat-img {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 667px) {
+    .chat-img {
+        width: 60% !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .chat-img {
+        width: 75% !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .chat-img {
+        width: 85% !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .bowl {
+        width: 100% !important;
+    }
+}
+
+.elevate {
+    border-radius: 10px 0 0 10px;
+}
+.elevate-left {
+    margin-top: 70%;
+    margin-left: 20%;
+    @media screen and (max-width: 991px) {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    @media screen and (max-width: 409px) {
+        margin-top: 8% !important;
+        margin-left: 0% !important;
+    }
+}
+.discover-left {
+    border-radius: 10px;
+}
+.discover-right {
+    margin-top: 20%;
+    @media screen and (max-width: 767px) {
+        margin-top: 5%;
+    }
+}
+.advantage-section {
+    background-image: url("../img/advantageRectangle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.chat-inner {
+    background-image: url("../img/chatBotbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chatBot-left {
+    margin-top: 50px;
+    @media screen and (max-width: 409px) {
+        padding: 0px !important;
+    }
+}
+.chatBot-row {
+    @media screen and (max-width: 2826px) {
+        margin-top: 8% !important;
+    }
+}
+.chatBot-row {
+    @media screen and (max-width: 1525px) {
+        margin-top: 7% !important;
+    }
+}
+.chatBot-row {
+    @media screen and (max-width: 1200px) {
+        margin-top: 5% !important;
+    }
+}
+.chatBot-row {
+    @media screen and (max-width: 409px) {
+        padding: 0px !important;
+    }
+}
+.footer-section {
+    background-image: url("../img/Footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
